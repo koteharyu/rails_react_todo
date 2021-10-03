@@ -5,3 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+SAMPLE_TODOS = [
+  {
+    name: "Going around the world",
+  },
+  {
+    name: "Graduating from college"
+  },
+  {
+    name: "Published a book"
+  }
+]
+
+SAMPLE_TODOS.each do |todo|
+  Todo.create(todo)
+end
